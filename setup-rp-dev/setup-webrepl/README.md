@@ -1,4 +1,4 @@
-# Set up webrepl for development over wifi
+# Set up webREPL for development over wifi
 
 ## 1. Open Thonny
 Open Thonny By Clicking on `Applications Menu -> Programming -> Thonny Python IDE`
