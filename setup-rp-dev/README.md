@@ -57,6 +57,7 @@ So select and download the latest v4
 ![image](https://user-images.githubusercontent.com/4077233/135771562-790c27ce-dfec-42a2-b113-54f8616252b7.png)
 
 * Copy and paste this test python code and run  
+[Print Device Info](print-device-info.py)
 
 ```
 import uos
