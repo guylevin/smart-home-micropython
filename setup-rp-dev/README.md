@@ -59,30 +59,9 @@ So select and download the latest v4
 * Copy and paste this test python code and run  
 [Print Device Info](print-device-info.py)
 
-```
-import uos
-import network
-import sys
 
-print("Python version: {version}\nVersion Info: {info}"
-      .format(version=sys.version, info=sys.version_info))
 
-print("-----------------------")
+For setting up development using wifi see [Setup webREPL](setup-webrepl/)
 
-print("sysname: {sysname}\nnodename: {nodename}\nrelease: {release}\nversion: {version}\nmachine: {machine}"
-      .format(sysname=uos.uname().sysname, nodename=uos.uname().nodename, release=uos.uname().release,
-              version=uos.uname().version, machine=uos.uname().machine))
 
-print("-----------------------")
 
-print("WIFI Networks\n")
-
-wifi = network.WLAN(network.STA_IF)
-wifi.active(True)
-
-for ap in wifi.scan():
-    print(ap)
-    
-print("-----------------------")
-
-```
