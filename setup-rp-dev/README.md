@@ -46,3 +46,42 @@ So select and download the latest v4
 * Click Install
 
 ![image](https://user-images.githubusercontent.com/4077233/135770254-62e60503-4009-4cde-8111-ac6cb0f69d44.png)
+
+## Test the connection
+
+* Click on `Run->Select Interpreter`  
+* Select `MicroPython (ESP32)` 
+* Select port
+* OK
+
+![image](https://user-images.githubusercontent.com/4077233/135771562-790c27ce-dfec-42a2-b113-54f8616252b7.png)
+
+* Copy and paste this test python code and run  
+
+```
+import uos
+import network
+import sys
+
+print("Python version: {version}\nVersion Info: {info}"
+      .format(version=sys.version, info=sys.version_info))
+
+print("-----------------------")
+
+print("sysname: {sysname}\nnodename: {nodename}\nrelease: {release}\nversion: {version}\nmachine: {machine}"
+      .format(sysname=uos.uname().sysname, nodename=uos.uname().nodename, release=uos.uname().release,
+              version=uos.uname().version, machine=uos.uname().machine))
+
+print("-----------------------")
+
+print("WIFI Networks\n")
+
+wifi = network.WLAN(network.STA_IF)
+wifi.active(True)
+
+for ap in wifi.scan():
+    print(ap)
+    
+print("-----------------------")
+
+```
