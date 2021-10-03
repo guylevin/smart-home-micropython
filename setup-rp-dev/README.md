@@ -1,4 +1,4 @@
-# Setup Raspberry Pi for MicroPython Development
+# Setup Raspberry Pi and ESP32 for MicroPython Development
 
 ## 1. Enable the serial port
 
