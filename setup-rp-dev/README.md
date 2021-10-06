@@ -14,11 +14,15 @@
 
 Download the firmware
 * Go to https://micropython.org/download/  
-* Select `Generic ESP32 module` under `Espressif ESP-based boards`
+* For esp32
+  * Select `Generic ESP32 module` under `Espressif ESP-based boards`
+  * The page says   
 
-* The page says   
-![image](https://user-images.githubusercontent.com/4077233/135769042-c66bd798-ff25-465c-aa19-0d00c0cdcc2f.png)  
-So select and download the latest v4
+    ![image](https://user-images.githubusercontent.com/4077233/135769042-c66bd798-ff25-465c-aa19-0d00c0cdcc2f.png)  
+    So select and download the latest v4
+* For esp8266
+  * Select `Generic ESP32 module` under `Generic ESP8266 module`  
+
 
 ## 3. Get Thonny Ready
 * Open Thonny By Clicking on `Applications Menu -> Programming -> Thonny Python IDE`
