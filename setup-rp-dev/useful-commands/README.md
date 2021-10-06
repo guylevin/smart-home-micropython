@@ -12,8 +12,9 @@ Get port and other information about the device
 Erase Device  
 `esptool.py -p <port name> erase_flash`
 
+Install Firmware  
+`esptool.py --port /dev/ttyUSB0 --baud 1000000 write_flash --flash_size=4MB -fm dio 0  ./Downloads/esp8266-20210902-v1.17.bin`  
   
-    
     
 ## ampy
 
